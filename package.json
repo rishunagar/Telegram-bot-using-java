@@ -1,0 +1,15 @@
+{
+  "name": "asmita",
+  "version": "1.0.0",
+  "description": "keyword",
+  "main": "script.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "asmita",
+  "license": "ISC"
+}

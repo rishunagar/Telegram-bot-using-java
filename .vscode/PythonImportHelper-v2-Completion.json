@@ -1,0 +1,83 @@
+[
+    {
+        "label": "telebot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "telebot",
+        "description": "telebot",
+        "detail": "telebot",
+        "documentation": {}
+    },
+    {
+        "label": "start",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def start(message):\n    bot.reply_to(message, \"Welcome to GU bot \\n How can I help you\")\n# This is decorter for help command\n@bot.message_handler(['help'])\ndef help(message):\n    bot.reply_to(message, \"\"\"/start -> Greeting\n     /help -> See commands list \n     /icloud -> iCLoud EMS link  \n     /lms -> GU LMS link  \n     /GU_eliberay -> GU eLIBRARY link                    ",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "help",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def help(message):\n    bot.reply_to(message, \"\"\"/start -> Greeting\n     /help -> See commands list \n     /icloud -> iCLoud EMS link  \n     /lms -> GU LMS link  \n     /GU_eliberay -> GU eLIBRARY link                    \n     \"\"\")\n# this is for icloud command\n@bot.message_handler(['icloud'])\ndef link(message):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "link",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def link(message):\n    bot.reply_to(\n        message, \"https://t.me/Galgotias_University_bot/Icloudemstelebot\")\n# this is for GU LMS\n@bot.message_handler(['lms'])\ndef link(message):\n    bot.reply_to(message, \"https://t.me/Galgotias_University_bot/GuLMS\")\n# this is for GU eLIBRARY\n@bot.message_handler(['GU_eliberay'])\ndef link(message):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "link",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def link(message):\n    bot.reply_to(message, \"https://t.me/Galgotias_University_bot/GuLMS\")\n# this is for GU eLIBRARY\n@bot.message_handler(['GU_eliberay'])\ndef link(message):\n    bot.reply_to(message, \"https://t.me/Galgotias_University_bot/Gu_eLIBRARY\")\n# This is a default message when cmd is invalid\n@bot.message_handler()\ndef custom(message):\n    msg = \"This is invalid command\"",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "link",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def link(message):\n    bot.reply_to(message, \"https://t.me/Galgotias_University_bot/Gu_eLIBRARY\")\n# This is a default message when cmd is invalid\n@bot.message_handler()\ndef custom(message):\n    msg = \"This is invalid command\"\n    bot.reply_to(message, msg)\n# polling used to continuously check for new updates\nbot.polling()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "custom",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def custom(message):\n    msg = \"This is invalid command\"\n    bot.reply_to(message, msg)\n# polling used to continuously check for new updates\nbot.polling()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "Token",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "Token = \"6790259664:AAHBY8aL-bAhp_Bvw3FGlkB1mFyj0sqmB0E\"\nbot = telebot.TeleBot(Token)\n# a function to handle a text message\n@bot.message_handler(['start'])\ndef start(message):\n    bot.reply_to(message, \"Welcome to GU bot \\n How can I help you\")\n# This is decorter for help command\n@bot.message_handler(['help'])\ndef help(message):\n    bot.reply_to(message, \"\"\"/start -> Greeting",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "bot",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "bot = telebot.TeleBot(Token)\n# a function to handle a text message\n@bot.message_handler(['start'])\ndef start(message):\n    bot.reply_to(message, \"Welcome to GU bot \\n How can I help you\")\n# This is decorter for help command\n@bot.message_handler(['help'])\ndef help(message):\n    bot.reply_to(message, \"\"\"/start -> Greeting\n     /help -> See commands list ",
+        "detail": "app",
+        "documentation": {}
+    }
+]
